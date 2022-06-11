@@ -1,0 +1,30 @@
+def mdc(*n):
+
+    if len(n) == 1:
+        for lista in n:
+            n = list(lista)
+    else:
+        n = list(n)
+    divisor = 2
+    divisores_comuns = []
+    while True:
+        contador_divisores = 0
+        contador_de_nao_divisoes = 0
+        for pos, numero in enumerate(n):
+            if numero % divisor == 0:
+                contador_divisores += 1
+                n[pos] = numero/divisor
+
+                if contador_divisores == len(n):
+                    divisores_comuns.append(divisor)
+            else:
+                contador_de_nao_divisoes += 1
+                if contador_de_nao_divisoes == len(n):
+                    divisor += 1
+        if divisor > n[0]:
+            break
+    mdc = 1
+    for numeros in divisores_comuns:
+        mdc *= numeros
+    print(divisores_comuns)
+    return mdc

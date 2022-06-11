@@ -28,7 +28,6 @@ def mdc(*n):
     mdc = 1
     for numeros in divisores_comuns:
         mdc *= numeros
-    print(divisores_comuns)
     return mdc
 
 

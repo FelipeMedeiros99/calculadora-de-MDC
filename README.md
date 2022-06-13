@@ -5,7 +5,7 @@ o resultado do MDC (MÁXIMO DIVISOR COMUM).
 
 ###########################################################################
 
-# MDC-calculator using python
+# GCD-calculator using python
 this program calculates the MDC between as many numbers as you want.
 After placing all the values, just type the number 0 (zero) to receive
 the result of the GCD (GREATEST COMMON DIVIDER).

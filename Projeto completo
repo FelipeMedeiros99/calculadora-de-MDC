@@ -35,15 +35,16 @@ print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 print('     CALCULADORA DE MDC      ')
 print('   DIGITE O PARA CALCULAR    ')
 print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-
-n = 1
-numeros = []
 while True:
-    numero = int(input(f'{n}° número: '))
-    numeros.append(numero)
-    n += 1
-    if 0 in numeros:
-        numeros.pop()
-        break
+    n = 1
+    numeros = []
+    while True:
+        numero = int(input(f'{n}° número: '))
+        numeros.append(numero)
+        n += 1
+        if 0 in numeros:
+            numeros.pop()
+            break
 
-print(f'o MDC de {numeros} é: {mdc(numeros)}')
+    print(f'o MDC de {numeros} é: {mdc(numeros)}')
+    
